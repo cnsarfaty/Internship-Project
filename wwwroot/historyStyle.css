@@ -1,0 +1,90 @@
+﻿
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.input{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+#submit.center {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 14px;
+    position: center;
+    color: black;
+    border-radius: 5px;
+    height: 35px;
+    width: 150px;
+   
+   
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#date {
+    border-radius: 5px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+#historyTable {
+    color: white;
+    margin: 15px;
+}
+
+th {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 9%;
+}
+
+td {
+    text-align:left;
+    padding-left: 9%;
+}
+
+#country {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: black;
+    border-radius: 5px;
+    height: 35px;
+    width: 150px;
+}
+
+option:hover {
+    background-color: lightgray;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

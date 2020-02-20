@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>IP Location Conversion</title>
+    <link href="./historyStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <br />
+    <div class="input">
+        <div>Filter by date or country:   </div>
+        <div class="filter">
+            <input type="date" id="date" />
+            <select id="country">
+                <option>All countries</option>
+                <option>AD</option>
+                <option>AE</option>
+                <option>AF</option>
+                <option>AG</option>
+                <option>AI</option>
+                <option>AL</option>
+                <option>AM</option>
+                <option>AN</option>
+                <option>AO</option>
+                <option>AQ</option>
+                <option>AR</option>
+                <option>AS</option>
+                <option>AT</option>
+                <option>AU</option>
+                <option>AW</option>
+                <option>AZ</option>
+                <option>BA</option>
+                <option>BB</option>
+                <option>BD</option>
+                <option>BE</option>
+                <option>BF</option>
+                <option>BG</option>
+                <option>BH</option>
+                <option>BI</option>
+                <option>BJ</option>
+                <option>BM</option>
+                <option>BN</option>
+                <option>BO</option>
+                <option>BR</option>
+                <option>BS</option>
+                <option>BT</option>
+                <option>BV</option>
+                <option>BW</option>
+                <option>BY</option>
+                <option>BZ</option>
+                <option>CA</option>
+                <option>CC</option>
+                <option>CF</option>
+                <option>CG</option>
+                <option>CH</option>
+                <option>CI</option>
+                <option>CK</option>
+                <option>CL</option>
+                <option>CM</option>
+                <option>CN</option>
+                <option>CO</option>
+                <option>CR</option>
+                <option>CS</option>
+                <option>CU</option>
+                <option>CV</option>
+                <option>CX</option>
+                <option>CY</option>
+                <option>CZ</option>
+                <option>DE</option>
+                <option>DJ</option>
+                <option>DK</option>
+                <option>DM</option>
+                <option>DO</option>
+                <option>DZ</option>
+                <option>EC</option>
+                <option>EE</option>
+                <option>EG</option>
+                <option>EH</option>
+                <option>ER</option>
+                <option>ES</option>
+                <option>ET</option>
+                <option>FI</option>
+                <option>FJ</option>
+                <option>FK</option>
+                <option>FM</option>
+                <option>FO</option>
+                <option>FR</option>
+                <option>FX</option>
+                <option>GA</option>
+                <option>GB</option>
+                <option>GD</option>
+                <option>GE</option>
+                <option>GF</option>
+                <option>GH</option>
+                <option>GI</option>
+                <option>GL</option>
+                <option>GM</option>
+                <option>GN</option>
+                <option>GP</option>
+                <option>GQ</option>
+                <option>GR</option>
+                <option>GS</option>
+                <option>GT</option>
+                <option>GU</option>
+                <option>GW</option>
+                <option>GY</option>
+                <option>HK</option>
+                <option>HM</option>
+                <option>HN</option>
+                <option>HR</option>
+                <option>HT</option>
+                <option>HU</option>
+                <option>ID</option>
+                <option>IE</option>
+                <option>IL</option>
+                <option>IN</option>
+                <option>IO</option>
+                <option>IQ</option>
+                <option>IR</option>
+                <option>IS</option>
+                <option>IT</option>
+                <option>JM</option>
+                <option>JO</option>
+                <option>JP</option>
+                <option>KE</option>
+                <option>KG</option>
+                <option>KH</option>
+                <option>KI</option>
+                <option>KM</option>
+                <option>KN</option>
+                <option>KP</option>
+                <option>KR</option>
+                <option>KW</option>
+                <option>KY</option>
+                <option>KZ</option>
+                <option>LA</option>
+                <option>LB</option>
+                <option>LC</option>
+                <option>LI</option>
+                <option>LK</option>
+                <option>LR</option>
+                <option>LS</option>
+                <option>LT</option>
+                <option>LU</option>
+                <option>LV</option>
+                <option>LY</option>
+                <option>MA</option>
+                <option>MC</option>
+                <option>MD</option>
+                <option>MG</option>
+                <option>MH</option>
+                <option>MK</option>
+                <option>ML</option>
+                <option>MM</option>
+                <option>MN</option>
+                <option>MO</option>
+                <option>MP</option>
+                <option>MQ</option>
+                <option>MR</option>
+                <option>MS</option>
+                <option>MT</option>
+                <option>MU</option>
+                <option>MV</option>
+                <option>MW</option>
+                <option>MX</option>
+                <option>MY</option>
+                <option>MZ</option>
+                <option>NA</option>
+                <option>NC</option>
+                <option>NE</option>
+                <option>NF</option>
+                <option>NG</option>
+                <option>NI</option>
+                <option>NL</option>
+                <option>NO</option>
+                <option>NP</option>
+                <option>NR</option>
+                <option>NT</option>
+                <option>NU</option>
+                <option>NZ</option>
+                <option>OM</option>
+                <option>PA</option>
+                <option>PE</option>
+                <option>PF</option>
+                <option>PG</option>
+                <option>PH</option>
+                <option>PK</option>
+                <option>PL</option>
+                <option>PM</option>
+                <option>PN</option>
+                <option>PR</option>
+                <option>PT</option>
+                <option>PW</option>
+                <option>PY</option>
+                <option>QA</option>
+                <option>RE</option>
+                <option>RO</option>
+                <option>RU</option>
+                <option>RW</option>
+                <option>SA</option>
+                <option>Sb</option>
+                <option>SC</option>
+                <option>SD</option>
+                <option>SE</option>
+                <option>SG</option>
+                <option>SH</option>
+                <option>SI</option>
+                <option>SJ</option>
+                <option>SK</option>
+                <option>SL</option>
+                <option>SM</option>
+                <option>SN</option>
+                <option>SO</option>
+                <option>SR</option>
+                <option>ST</option>
+                <option>SU</option>
+                <option>SV</option>
+                <option>SY</option>
+                <option>SZ</option>
+                <option>TC</option>
+                <option>TD</option>
+                <option>TF</option>
+                <option>TG</option>
+                <option>TH</option>
+                <option>TJ</option>
+                <option>TK</option>
+                <option>TM</option>
+                <option>TN</option>
+                <option>TO</option>
+                <option>TP</option>
+                <option>TR</option>
+                <option>TT</option>
+                <option>TV</option>
+                <option>TW</option>
+                <option>TZ</option>
+                <option>UA</option>
+                <option>UG</option>
+                <option>UK</option>
+                <option>UM</option>
+                <option>US</option>
+                <option>UY</option>
+                <option>UZ</option>
+                <option>VA</option>
+                <option>VC</option>
+                <option>VE</option>
+                <option>VG</option>
+                <option>VI</option>
+                <option>VN</option>
+                <option>VU</option>
+                <option>WF</option>
+                <option>WS</option>
+                <option>YE</option>
+                <option>YT</option>
+                <option>YU</option>
+                <option>ZA</option>
+                <option>ZM</option>
+                <option>ZR</option>
+                <option>ZW</option>
+                <option>COM</option>
+                <option>EDU</option>
+                <option>GOV</option>
+                <option>INT</option>
+                <option>MIL</option>
+                <option>NET</option>
+                <option>ORG</option>
+                <option>ARPA</option>
+                <option>NATO</option>
+
+            </select>
+        </div>
+    </div>
+    <button id="submit" class="center">
+        Get History
+    </button>
+    <a href="/index.html">
+        Click here to enter location
+    </a>
+    <table id="historyTable" width="100%" style="text-align:center">
+    </table>
+    <script src="js/history.js">
+
+    </script>
+</body>
+</html>
